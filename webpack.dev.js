@@ -13,7 +13,7 @@ module.exports = mergeCommon({
   ],
   module: {
     loaders: [
-      { test: /\.jsx?$/, loaders: [ "react-hot", "babel?stage=1" ], include: BuildConstants.ENTRY_FOLDER }
+      { test: /\.jsx?$/, loaders: [ "babel?stage=1" ], include: BuildConstants.ENTRY_FOLDER }
     ]
   },
   plugins: [
@@ -25,7 +25,6 @@ module.exports = mergeCommon({
       progress: true,
       colors: true
     },
-    noInfo: true,
     hot: true,
     port: 3000,
     contentBase: BuildConstants.OUTPUT,

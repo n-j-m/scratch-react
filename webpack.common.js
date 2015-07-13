@@ -13,12 +13,8 @@ module.exports = {
     filename: "bundle.js"
   },
   module: {
-    preLoaders: [
-      { test: /\.jsx?$/, loader: "eslint-loader", include: BuildConstants.ENTRY_FOLDER }
-    ],
     loaders: [
-      { test: /\.jsx?$/, loader: "babel?stage=1", include: BuildConstants.ENTRY_FOLDER },
-      { test: /\.css$/, loaders: [ "style", "css" ] },
+      { test: /\.css$/, loaders: [ "style", "css" ] }
     ]
   },
   plugins: [
